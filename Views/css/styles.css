@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-one: #133C55;
+    --color-two: #386FA4;
+    --color-theere: #59A5D8;
+    --color-four: #84D2F6;
+    --color-five: #91E5F6;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.name-schools h2{
+    color: var(--color-one);
+    font-weight: bold;
+}
+.container-main-login{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height:100vh;
+    background: var(--color-one);
+}
+.container-main-login .container-login-image{
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+.container-main-login .container-login-image img{
+    width: 95%;
+    height:100%;
+}
+.container-logo-schools{
+    position: relative;
+    width: 50%;
+    height: 230px;
+    margin: auto;
+}
+.container-logo-schools img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container-form-user-login{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-form-user-login form{
+    position: relative;
+    width: 70%;
+    height: auto;
+    padding: 40px;
+    margin-top: 40px;
+    background-color: #fff; /* Añadimos un color de fondo blanco */
+    border-radius: 10px; /* Redondeamos las esquinas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+    transition: 1.4s;
+}
+.container-form-user-login .btn-login{
+    width: 50%;
+    height: 40px;
+    background-color: var(--color-one);
+    color:white;
+    transition: 0.3s;
+}
+.container-form-user-login .btn-login:hover{
+    cursor:pointer;
+    background-color: var(--color-theere);
+    transition: 0.3s;
+}
+
+.container-form-user-login form input::placeholder{
+   font-size: 16px;
+}
+.container-form-user-login .forget-password{
+    text-decoration: none;
+    color: var(--color-one)
+}
+.container-form-user-login .input-group-text{
+    background: var(--color-one);
+    color:white;
+}
+
+
+
+@media only screen and (max-width: 530px) {
+    .container-logo-schools img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .container-form-user-login form {
+        width: 100%;
+        transition: 1.4s;
+        margin-bottom: 30px;
+    }
+
+    .container-form-user-login .btn-login{
+        width: 80%;
+        height: auto;
+    }
+
+}
